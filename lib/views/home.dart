@@ -10,9 +10,9 @@ class HomePage extends StatelessWidget {
           title: const Text('Beyaz Alan'),
           actions: [
             IconButton(
-                icon: const Icon(Icons.manage_accounts_outlined),
+                icon: const Icon(Icons.verified_outlined),
                 onPressed: () {
-                  NFC.reader();
+                  NFC.getID();
                 }),
           ],
         ),
