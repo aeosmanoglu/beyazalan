@@ -1,3 +1,4 @@
+import 'package:beyazalan/controllers/nfc.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,11 +10,10 @@ class HomePage extends StatelessWidget {
           title: const Text('Beyaz Alan'),
           actions: [
             IconButton(
-              icon: const Icon(Icons.manage_accounts_outlined),
-              onPressed: () {
-                null;
-              },
-            ),
+                icon: const Icon(Icons.manage_accounts_outlined),
+                onPressed: () {
+                  NFC.reader();
+                }),
           ],
         ),
         body: Padding(
