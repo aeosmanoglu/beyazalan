@@ -1,6 +1,6 @@
 # beyazalan
 
-## v1
+## TODO
 
 ### Genel
 
@@ -10,11 +10,11 @@
 ### Yönetim
 
 - [ ] Create
-  - [ ] Hiç yönetici yoksa yeni oluştur.
-  - [ ] Kart id
-  - [ ] Adı.
-  - [ ] Yaratılma zamanı.
-  - [ ] Yaratan kişi.
+  - [x] Hiç yönetici yoksa yeni oluştur.
+  - [x] Kart id
+  - [x] Adı.
+  - [x] Yaratılma zamanı.
+  - [x] Yaratan kişi.
 - [ ] Read
   - [ ] Yöneticileri listele.
 - [ ] Update
@@ -34,3 +34,12 @@
   - [ ] Bilgileri listele.
 - [ ] Update
 - [ ] Delete
+
+## Views
+
+```mermaid
+flowchart TD
+home-->inventoryList
+home-->admin-->addAdmin
+admin-->addInventory
+```

@@ -1,9 +1,14 @@
+import 'package:beyazalan/controllers/boxes_ctrl.dart';
 import 'package:beyazalan/models/brand_colors.dart';
-import 'package:beyazalan/views/home.dart';
+import 'package:beyazalan/views/add_user_page.dart';
+import 'package:beyazalan/views/home_page.dart';
+import 'package:beyazalan/views/user_page.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
+Future<void> main() async {
+  await Boxes.initHive();
+  Boxes.registerAdapters();
+  await Boxes.openBoxes();
   runApp(const App());
 }
 
@@ -28,6 +33,8 @@ class App extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const HomePage(),
+          '/user': (context) => const UserPage(),
+          '/adduser': (context) => const AddUserPage(),
         },
       );
 }
