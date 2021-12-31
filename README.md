@@ -15,12 +15,12 @@
   - [x] Adı.
   - [x] Yaratılma zamanı.
   - [x] Yaratan kişi.
-- [ ] Read
-  - [ ] Yöneticileri listele.
+- [x] Read
+  - [x] Yöneticileri listele.
 - [ ] Update
   - [ ] Kartını güncelle.
   - [ ] Adını güncelle.
-- [ ] Delete
+- [x] Delete
 
 ### Kullanıcı
 

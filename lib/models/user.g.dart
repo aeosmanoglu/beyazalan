@@ -19,8 +19,8 @@ class UserAdapter extends TypeAdapter<User> {
     return User(
       name: fields[0] as String,
       cardID: fields[1] as String,
-      createDate: fields[2] as DateTime,
       creator: fields[3] as String,
+      createDate: fields[2] as DateTime?,
     );
   }
 

@@ -18,4 +18,12 @@ class UserController {
 
   User getUser(String cardID) =>
       _box.values.firstWhere((element) => element.cardID == cardID);
+
+  bool isUserAvailable(String cardID) {
+    List list = [];
+    for (var element in _box.values) {
+      list.add(element.cardID);
+    }
+    return list.contains(cardID);
+  }
 }
