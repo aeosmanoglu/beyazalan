@@ -4,7 +4,7 @@
 
 ### Genel
 
-- [ ] Logo
+- [x] Logo
 - [ ] İsim
 
 ### Yönetim
