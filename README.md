@@ -5,7 +5,7 @@
 ### Genel
 
 - [x] Logo
-- [ ] İsim
+- [x] İsim
 
 ### Yönetim
 
